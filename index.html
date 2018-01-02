@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Edge Browser latest rendering engine -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- default width and zoom/scale -->
+  <meta name="viewport" content="width = device-width, initial-scale = 1">
+  <title>Shopify Front-End</title>
+
+  <!-- Linking to a downloaded version of bootstraps style sheets so that local edits could be made -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+</head>
+
+<!-- full container to make a neat single page application  
+the divs follow the containter->row->col grid structure -->
+<div class="container">
+
+  <!-- Main Header Text -->
+  <div class="row justify-content-md-center">
+    <div class="col-lg-7 col-md-9">
+      <h1>
+        Stay up to date with ecommerce trends with Shopify's newsletter
+      </h1>
+    </div>
+  </div>
+  <div class="row justify-content-md-center">
+    <div class="col-lg-7 col-md-9">
+      <p class="bold-green-pipe">
+        __
+      </p>
+    </div>
+  </div>
+  <div class="row justify-content-md-center">
+    <div class="col-lg-7 col-md-9">
+      <p>
+        Subscribe for free marketing tips
+      </p>
+    </div>
+  </div>
+
+  <!-- Form Inputs  -->
+  <div class="row justify-content-md-center">
+    <div class="col-lg-4 col-md-5">
+      <input type="text" class="form-control" id="email" placeholder="Email Address">
+    </div>
+
+    <div class="col-lg-3 col-md-4">
+      <select class="form-control" id="interest" placeholder="Interested In ...">
+        <option value="" selected disabled>Interested In...</option>
+        <option>Online Store</option>
+        <option>Shopify POS</option>
+        <option>Retail Package</option>
+        <option>Buy Button</option>
+        <option>Facebook Shop</option>
+        <option>Facebook Messenger</option>
+        <option>Enterprise</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Blank error div  -->
+  <div class="row justify-content-md-center">
+    <div class="col-lg-7 col-md-9">
+      <p id="error-email">
+
+      </p>
+    </div>
+  </div>
+
+  <div class="row justify-content-md-center">
+    <div class="col-lg-7 col-md-9">
+
+      <button type="submit" id="submit-button" class="btn btn-light" role="button" onclick="Validate()">
+        Sign up now
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- unsubscribe button linking no where -->
+<a href="#">
+  <u class="bottomElement">
+    unsubscribe
+  </u>
+</a>
+
+<!-- JQuerty, Bootstrap and Local Script files  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>
