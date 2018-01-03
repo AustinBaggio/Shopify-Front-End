@@ -14,8 +14,11 @@ function Validate() {
         if (interest == "") {
             document.getElementById("error-email").innerHTML = 'please select an interest';
         }
+        else{
+            document.getElementById("error-email").innerHTML = '';
+            console.log("Email: ", mail, " Interest: ", interest)        
+        }
         //log to the console if there is a valid email and interest 
-        console.log("Email: ", mail, " Interest: ", interest)
         return (true)
     }
     document.getElementById("error-email").innerHTML = 'please enter a valid email';
